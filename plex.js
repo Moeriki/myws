@@ -12,11 +12,6 @@ const PLEX_INSTANCE_ID = 'i-039ffec92f9a21713';
 
 const ec2 = new AWS.EC2({ region: 'eu-west-2' });
 
-// const getState = (data) => {
-//   console.dir(data, { colors: true, depth: 5 });
-//   return data.InstanceStatuses[0].InstanceState;
-// };
-
 // exports
 
 exports.status = () => ec2.describeInstances()
