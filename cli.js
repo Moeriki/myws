@@ -9,7 +9,7 @@ const { plex } = require('./index');
 const noop = () => {};
 
 yargs
-  .command('plex', 'manager plex server', (args) => args
+  .command('plex', 'manage plex server', (args) => args
     .command('status', 'get plex server status', noop, () => {
       plex.status()
         .then(console.log)
